@@ -1,0 +1,65 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+
+    width: 100%;
+    background-image: url("./rick-and-morty-vaporwave.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+nav, #footer {
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav:hover {
+
+    box-shadow: 10px 15px 20px rgb(79, 67, 214);
+}
+
+#footer:hover {
+
+    box-shadow: 0px 5px 5px rgb(214, 67, 202), 0px -5px 5px rgb(214, 67, 202); 
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3em;
+}
+
+#characters {
+
+    width: 80%;
+    margin: 5% auto;
+    border: 3px solid yellow;
+ 
+
+}
+
+.card {
+
+    width: 22rem;
+    background: inherit;
+    border: none;
+    padding: none;
+
+}
+
+
+.card:hover {
+
+    box-shadow: 0px 10px 15px rgb(79, 67, 214), 0px -5px 5px rgb(79, 67, 214);
+    
+}

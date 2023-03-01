@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Rick and Morty";
+    src: url("./get_schwifty.ttf");
+}
+
 #main-container {
 
     width: 100%;
@@ -33,10 +38,11 @@ nav:hover {
 }
 
 h1 {
-
+    font-family: "Rick and Morty";
     text-align: center;
     margin-top: 3%;
-    font-size: 3em;
+    font-size: 4em;
+    color: rgb(47, 255, 172);
 }
 
 #characters {
@@ -62,4 +68,11 @@ h1 {
 
     box-shadow: 0px 10px 15px rgb(79, 67, 214), 0px -5px 5px rgb(79, 67, 214);
     
+}
+
+h3 {
+
+    font-family: "Rick and Morty";
+    text-align: center;
+    color: rgb(47, 255, 172)
 }

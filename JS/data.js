@@ -26,3 +26,26 @@ export const getCharacters = () => {
 
 };
 
+export const getSingleCharacter = (id) => {
+
+    return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    .then(response => response.json())
+    .then(rawCharacterObject => {
+        console.log(rawCharacterObject);
+        
+        return new Character (
+            
+            rawCharacterObject.id, 
+            rawCharacterObject.image, 
+            rawCharacterObject.name, 
+            rawCharacterObject.status,
+            rawCharacterObject.species,
+            rawCharacterObject.gender,
+            rawCharacterObject.origin.name,
+            rawCharacterObject.location.name
+            
+            );
+    });
+
+};
+

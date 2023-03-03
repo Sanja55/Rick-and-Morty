@@ -49,7 +49,7 @@ h1 {
 
     width: 80%;
     margin: 5% auto;
-    border: 5px solid crimson;
+    border: 10px solid transparent;
  
 }
 
@@ -78,7 +78,8 @@ h3 {
 
 #character-info {
 
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 10px 15px 15px 10px rgb(152, 48, 143), 10px -15px 15px 10px rgb(214, 67, 202) ;
 }
 
 .list-group {
@@ -91,6 +92,7 @@ h3 {
 
     background: inherit;
     border: none;
+
 }
 h4 {
 
@@ -99,3 +101,10 @@ h4 {
     color: rgb(47, 255, 172);
 }
 
+.go-back-button {
+
+    background-color: rgb(47, 255, 172);
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(46, 66, 159);
+}

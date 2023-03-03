@@ -49,9 +49,8 @@ h1 {
 
     width: 80%;
     margin: 5% auto;
-    border: 3px solid yellow;
+    border: 5px solid crimson;
  
-
 }
 
 .card {
@@ -74,5 +73,29 @@ h3 {
 
     font-family: "Rick and Morty";
     text-align: center;
-    color: rgb(47, 255, 172)
+    color: rgb(47, 255, 172);
 }
+
+#character-info {
+
+    margin: 0 auto;
+}
+
+.list-group {
+
+    background: inherit;
+    border: none;
+}
+
+.list-group-item {
+
+    background: inherit;
+    border: none;
+}
+h4 {
+
+    font-family: "Rick and Morty";
+    font-size: 2em;;
+    color: rgb(47, 255, 172);
+}
+

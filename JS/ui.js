@@ -33,55 +33,40 @@ export let renderCharacters = characters => {
 export let renderSingleCharacter = character => {
 
     let singleCharacterHmtl = `
-    
-    <div class="card d-flex flex-column justify-content-center align-items-center" style="width: 50%;">
-      
-      <div class="character-name row">
-        <h1>${character.name}</h1>
-      </div>
-      
-      <div class="image m-5">
-        <img src="${character.image}">
-      </div>
-      
-      <div class="card-body d-flex flex-row">
+   
+    <div>
+
+        <h1 class="text-center m-5 fw-bold">${character.name}</h1>
         
-        <div id="status">
-          <h5 class="card-title">Character Status</h5>
-          <p class="card-text">${character.status}</p>
+        <div id="character-info" class="d-flex flex-row flex-wrap justify-content-around">
+
+            <div class="col-md-7 rounded">
+                <img src=${character.image} class="card-img-top img-fluid img-thumbnail rounded-3" alt="Character Image">
+            </div>
+            
+            <div class="col-md-4 rounded">
+                
+                <ul class="p-1 word-wrap list-group img-thumbnail text-center">
+
+                    <li class="list-group-item"><h4>Status:</h4>${character.status}</li>
+                    <li class="list-group-item"><h4>Species:</h4>${character.species}</li>
+                    <li class="list-group-item"><h4>Gender:</h4>${character.gender}</li>
+                    <li class="list-group-item"><h4>Origin</h4>${character.origin}</li>
+                    <li class="list-group-item"><h4>Location:</h4>${character.location}</li>
+                    <li class="list-group-item"><h4>Episodes:</h4> ${character.episode}</li>
+                
+                </ul>
+                
+            </div>
+
         </div>
 
-        <div id="species">
-          <h5 class="card-title">Species:</h5>
-          <p class="card-text">${character.species}</p>
-        </div>
+        
+    </div
 
-        <div id="gender">
-          <h5 class="card-title">Gender</h5>
-          <p class="card-text">${character.gender}</p>
-        </div>
-
-        <div id="origin">
-          <h5 class="card-title">Origin:</h5>
-          <p class="card-text">${character.origin.name}</p>
-        </div>
-
-        <div id="location">
-          <h5 class="card-title">Location:</h5>
-          <p class="card-text">${character.location.name}</p>
-        </div>
-
-
-      </div>
-
-      <div id="back-button">
-        <a href="#" class="btn btn-primary">Back to Characters</a>
-      </div>
-
-    </div>
     
     `
+
     charactersBox.innerHTML = singleCharacterHmtl;
-
-
+   
 }

@@ -17,7 +17,7 @@ export let renderCharacters = characters => {
             
           <div class="card-body d-flex flex-column justify-content-center align-items-center">
               <h3 class="card-title mt-3">${character.name}</h3>
-              <a href="#" class="btn border-5 border-success m-4 col-8"><i class="fa fa-thumbs-up"></i> Like</a>
+              <a href="" class="btn m-4 col-8 like-button"><i class="fa fa-thumbs-o-up"></i> Like</a>
           </div>
         
         </div>
@@ -40,8 +40,8 @@ export let renderSingleCharacter = character => {
         
         <div id="character-info" class="d-flex flex-row flex-wrap justify-content-around">
 
-            <div class="col-md-7 rounded">
-                <img src=${character.image} class="card-img-top img-fluid img-thumbnail rounded-3 m-5" alt="Character Image">
+            <div class="col-md-6 rounded">
+                <img src=${character.image} class="card-img-top img-fluid img-thumbnail rounded-3 mt-5 mb-5" alt="Character Image">
             </div>
             
             <div class="col-md-4">

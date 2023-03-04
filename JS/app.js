@@ -1,6 +1,12 @@
 import { getCharacters, getSingleCharacter } from "./data.js";
 import { renderCharacters, renderSingleCharacter } from "./ui.js";
 
+const charactersBox = document.querySelector("#characters");
+const rickAndMortyLogoButton = document.querySelector("#rick-and-morty");
+const likeButton = document.querySelector(".like-button");
+
+console.log(likeButton);
+
 const getData = () => {
     getCharacters().then((characters) => {
         renderCharacters(characters);
@@ -9,7 +15,7 @@ const getData = () => {
 
 getData();
 
-const charactersBox = document.querySelector("#characters");
+
 
 let onCharacterImageClick = event => {
 
@@ -26,4 +32,23 @@ let onCharacterImageClick = event => {
     })
 }
 
+// const clickOnLikeButton = event => {
+
+//     const targetButton = event.target;
+//     //console.log(targetButton);
+//     if(!targetButton.classList.contains(".like-button")) {
+//         return;
+//     };
+
+//     targetButton.classList.toggle("like-toggle");
+
+// } 
+
+ const clickOnLikeButton = () => {
+     
+    likeButton.classList.toggle("like-toggle");
+}
+
 charactersBox.addEventListener("click", onCharacterImageClick);
+rickAndMortyLogoButton.addEventListener("click", getData);
+likeButton.addEventListener("click", clickOnLikeButton);

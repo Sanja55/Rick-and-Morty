@@ -76,10 +76,25 @@ h3 {
     color: rgb(47, 255, 172);
 }
 
+.car-image-top {
+
+    width:70%;
+}
+
+.like-button {
+
+    border: 3px solid rgb(47, 255, 172);
+    color:rgb(83, 103, 103);
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
 #character-info {
 
     margin: 20px auto;
-    box-shadow: 10px 15px 15px 10px rgb(152, 48, 143), 10px -15px 15px 10px rgb(214, 67, 202) ;
+    border-radius: 50px;
+    box-shadow: 10px 10px 70px 35px rgba(232,82,116,0.31);
+    
 }
 
 .list-group {
@@ -106,5 +121,11 @@ h4 {
     background-color: rgb(47, 255, 172);
     font-size: 1.5em;
     font-weight: 600;
-    color: rgb(46, 66, 159);
+    color: rgb(177, 188, 235);
+}
+
+.like-toggle {
+
+    background-color: rgb(47, 255, 172);
+    color: aliceblue;
 }

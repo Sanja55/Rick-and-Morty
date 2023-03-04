@@ -20,7 +20,7 @@ export const getCharacters = () => {
     return fetch(`https://rickandmortyapi.com/api/character`)
     .then(response => response.json())
     .then(rawCharactersObjects => {
-        console.log(rawCharactersObjects.results);
+        //console.log(rawCharactersObjects.results);
         return rawCharactersObjects.results.map(({ id, image, name }) => new Character(id, image, name));
     });
 
